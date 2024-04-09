@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="particles-js" class="main">
+    <h1 class="head">HAPPY BIRTHDAY, MA BOBA FRIEND</h1>
+    <nav class="switcher">
+        <button id="playButton">Boba дуртай дууг тоглуулах</button>
+        <audio id="music" src="edsong.mp3" loop></audio>
+    </nav>
+    <div class="schedule">
+        <div class="sched-box">
+            <h2>Дэлхийтэй хамт нарыг 20н удаа тойрон, сансар огторгуйгаар аяласан өдрийн баярын мэнд!</h2>
+            <p>
+                Амьдралд минь гэрэл гэгээ нэмж орж ирсэнд баярлалаа. Чиний л хажууд байхдаа хамгийн тухтай, сэтгэл амар байж чаддаг шүү. 
+                
+                
+            </p>
+            <p>
+                It seems like we will live our lives differently from now on and will never going to cross again. I love this moment that I am being with you… 
+                Go have fun
+            </p>
+            <p>
+                Good luck with your odyssey my bubbliest friend BOBA.
+                
+            </p>
+            <p>
+            ATTRAVERSIAMO</p>
+        </div>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const playButton = document.getElementById('playButton');
+        const music = document.getElementById('music');
+    
+        playButton.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                playButton.textContent = 'Boba дуртай дууг зогзоох';
+            } else {
+                music.pause();
+                playButton.textContent = 'Boba дуртай дууг тоглуулах';
+            }
+        });
+    </script>
+</body>
+
+</html>
